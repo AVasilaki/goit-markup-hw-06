@@ -741,6 +741,7 @@ img {
   border-radius: 2px;
   cursor: pointer;
   content: '';
+  transition: var(--o-transition);
 }
 .modal-form-check:checked + .modal-form-check-descr::before {
   background-color: var(--nav-link-hover);
@@ -752,5 +753,5 @@ img {
   background-position: center;
 }
 .modal-form-check:focus + .modal-form-check-descr::before {
-  border-color: #404bbf;
+  border-color: var(--nav-link-hover);
 }
