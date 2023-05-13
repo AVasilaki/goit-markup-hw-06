@@ -446,7 +446,7 @@
 
     <!-- modal window -->
 
-    <div class="backdrop is-hi" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -470,6 +470,8 @@
                 type="text"
                 class="modal-input"
                 name="user_name"
+                required
+                minlength="3"
               />
               <svg class="modal-form-input-icon">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -486,6 +488,7 @@
                 type="tel"
                 class="modal-input"
                 name="user_phone"
+                required
               />
               <svg class="modal-form-input-icon">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -502,31 +505,38 @@
                 type="email"
                 class="modal-input"
                 name="user_email"
+                required
               />
               <svg class="modal-form-input-icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <label class="modal-form-area"
-            ><span class="modal-input-name">Comment</span>
-            <textarea
-              class="modal-form-message"
-              placeholder="Text input"
-              name="user_message"
-            ></textarea>
-          </label>
-          <input
-            id="user-policy"
-            type="checkbox"
-            name="user_policy"
-            class="modal-form-chek"
-          />
-          <label for="user-policy" class="modal-form-desc">
-            I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-          </label>
-          <button type="submit" class="modal-form-submit">Send</button>
+          <div class="modal-textarea-wrapper">
+            <label class="modal-form-area"
+              ><span class="modal-input-name">Comment</span>
+              <textarea
+                class="modal-form-message"
+                placeholder="Text input"
+                name="user_message"
+              ></textarea>
+            </label>
+          </div>
+          <div class="modal-form-chekbox-wrapper">
+            <input
+              id="user-policy"
+              type="checkbox"
+              name="user_policy"
+              class="modal-form-check visually-hidden"
+            />
+            <label for="user-policy" class="modal-form-check-descr">
+              I accept the terms and conditions of the&nbsp;
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-form-submit order-btn">
+            Send
+          </button>
         </form>
       </div>
     </div>
