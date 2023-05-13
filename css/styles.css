@@ -666,19 +666,6 @@ img {
   outline: none;
   border-color: var(--btn-color);
 }
-.modal-input:focus + .modal-form-input-icon {
-  fill: var(--btn-color);
-}
-.modal-input-name {
-  display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  margin-bottom: 4px;
-  /* LIGHT SLATE */
-  color: var(--customers-color);
-}
 .modal-input-wrapper {
   position: relative;
   margin-bottom: 8px;
@@ -693,8 +680,22 @@ img {
   transform: translateY(50%);
   width: 18px;
   height: 24px;
-  transition: color var(--o-transition);
+  transition: fill var(--o-transition);
 }
+.modal-input:focus + .modal-form-input-icon {
+  fill: var(--btn-color);
+}
+.modal-input-name {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  /* LIGHT SLATE */
+  color: var(--customers-color);
+}
+
 .modal-form-message {
   resize: none;
   width: 100%;
