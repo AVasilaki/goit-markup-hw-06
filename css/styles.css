@@ -15,6 +15,7 @@
   --customers-color: #8e8f99;
   --o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --modal-border: rgba(46, 47, 66, 0.4);
+  --footer-hover-btn: #31d0aa;
 }
 /* глобальні для баді */
 body {
@@ -366,7 +367,7 @@ body {
 
 .footer-hover:hover,
 .footer-hover:focus {
-  background-color: #31d0aa;
+  background-color: var(--footer-hover-btn);
 }
 .footer-container {
   display: flex;
@@ -412,6 +413,7 @@ body {
 }
 .footer-subscribe-btn {
   display: flex;
+  cursor: pointer;
   gap: 16px;
   justify-content: center;
   align-items: center;
@@ -428,6 +430,10 @@ body {
 .foofer-subscribe-vector {
   height: 24px;
   width: 24px;
+}
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: var(--footer-hover-btn);
 }
 .footer-subscribe-name {
   display: block;
