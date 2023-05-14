@@ -426,6 +426,7 @@ body {
   line-height: 1.5;
   border-radius: 4px;
   padding: 8px 24px;
+  transition: background-color var(--o-transition);
 }
 .foofer-subscribe-vector {
   height: 24px;
