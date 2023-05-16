@@ -761,6 +761,7 @@ img {
   width: 100%;
   height: 120px;
   padding: 8px 16px;
+  margin-top: 4px;
   border: 1px solid var(--modal-border);
   border-radius: 4px;
   transition: border-color var(--o-transition);
@@ -815,4 +816,10 @@ img {
 }
 .modal-form-check:focus + .modal-form-check-descr::before {
   border-color: var(--nav-link-hover);
+}
+.modal-form-link {
+  color: var(--btn-color);
+}
+.textarea-label {
+  margin-bottom: 0;
 }
